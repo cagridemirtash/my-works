@@ -24,3 +24,4 @@ let quoteSampleThird = "3 blind mice.";
 let myRegexThird = /[^aeiou0-9]/gi; // Change this line
 let resultThird = quoteSampleThird.match(myRegexThird); // Change this line
 console.log(resultThird);
+console.log(myRegexThird);
