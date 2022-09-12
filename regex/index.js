@@ -25,3 +25,15 @@ let myRegexThird = /[^aeiou0-9]/gi; // Change this line
 let resultThird = quoteSampleThird.match(myRegexThird); // Change this line
 console.log(resultThird);
 console.log(myRegexThird);
+
+//Lazy matching -> you can use the ? character to change it to lazy matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.h*?1>/; // Change this line
+let resultLazy = text.match(myRegex);
+console.log(resultLazy);
+
+//Username control regex pattern
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let resultUsername = userCheck.test(username);
+console.log(resultUsername);
