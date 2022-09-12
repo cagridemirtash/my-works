@@ -33,7 +33,7 @@ let resultLazy = text.match(myRegex);
 console.log(resultLazy);
 
 //Username control regex pattern
-let username = "JackOfAllTrades";
+let username = "JackOfAllTradess";
 let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
 let resultUsername = userCheck.test(username);
 console.log(resultUsername);
