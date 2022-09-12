@@ -37,3 +37,11 @@ let username = "JackOfAllTradess";
 let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
 let resultUsername = userCheck.test(username);
 console.log(resultUsername);
+
+//Text Change
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/g; // Change this line
+console.log(str.match(fixRegex));
+let replaceText = "$3 $2 $1"; // Change this line
+let resultTextChange = str.replace(fixRegex, replaceText);
+console.log(resultTextChange);
