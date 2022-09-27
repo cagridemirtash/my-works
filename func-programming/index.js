@@ -165,6 +165,7 @@ function diffArray(arr1, arr2) {
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 // Remove other arguments without using arguments
+// Add removeEl spread manually
 function destroyer(arr, ...removeEl) {
   return arr.filter((x) => !removeEl.includes(x));
 }
