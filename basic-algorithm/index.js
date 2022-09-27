@@ -57,3 +57,28 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
+
+// Array sort from low to big. And then find index of given parameters from function
+function getIndexToIns(arr, num) {
+  //Solution 1
+  /*
+    arr.sort((first, second) => first - second);
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] >= num) {
+        return i;
+      }
+    }
+    return arr.length;
+  */
+  //Solution 2
+  //Arr.sort callback function which is refer to if positive,
+  //First changed to second, if equal or negative second is bigger and keep goin.
+
+  arr.push(num);
+  arr.sort((first, second) => first - second);
+  console.log(arr);
+  let index = arr.indexOf(num);
+  return index;
+}
+
+console.log(getIndexToIns([3, 10, 5, 22, 40, 55, 22], 50));
